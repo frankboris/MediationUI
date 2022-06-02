@@ -24,6 +24,6 @@ fun FeatureSection(features: List<Feature>) {
             style = MaterialTheme.typography.h1,
             modifier = Modifier.padding(15.dp)
         )
-        FlowGrid(features)
+        FlowVerticalGrid(features)
     }
 }

@@ -28,12 +28,12 @@ fun BottomMenu(
         mutableStateOf(initialSelectedItemIndex)
     }
     Row(
-        horizontalArrangement = Arrangement.SpaceAround,
+        horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier
             .fillMaxWidth()
             .background(DeepBlue)
-            .padding(15.dp)
+            .padding(horizontal = 15.dp, vertical = 7.5.dp)
     ) {
         items.forEachIndexed { index, item ->
             BottomMenuItem(

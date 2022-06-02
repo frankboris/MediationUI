@@ -13,6 +13,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.frankboris.mediationui.model.MenuModel
 import com.frankboris.mediationui.ui.theme.AquaBlue
 import com.frankboris.mediationui.ui.theme.ButtonBlue
@@ -44,12 +45,13 @@ fun BottomMenuItem(
                 painter = painterResource(id = item.iconId),
                 contentDescription = item.title,
                 tint = if (isSelected) activeTextColor else inactiveTextColor,
-                modifier = Modifier.size(20.dp)
+                modifier = Modifier.size(24.dp)
             )
         }
         Text(
             text = item.title,
-            color = if(isSelected) activeTextColor else inactiveTextColor
+            fontSize = 12.sp,
+            color = if (isSelected) activeTextColor else inactiveTextColor
         )
     }
 }
