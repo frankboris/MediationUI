@@ -53,12 +53,12 @@ fun HomeScreen() {
                 )
             )
         }
-        BottomMenu(items = listOf(
+        /*BottomMenu(items = listOf(
             MenuModel("Home", R.drawable.ic_home),
             MenuModel("Meditate", R.drawable.ic_bubble),
             MenuModel("Sleep", R.drawable.ic_moon),
             MenuModel("Music", R.drawable.ic_music),
             MenuModel("Profile", R.drawable.ic_profile),
-        ))
+        ))*/
     }
 }

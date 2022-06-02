@@ -17,7 +17,8 @@ fun FeatureSection(features: List<Feature>) {
     val scrollState = rememberScrollState()
     Column(modifier = Modifier
         .fillMaxWidth()
-        .verticalScroll(scrollState)) {
+        .verticalScroll(scrollState)
+    ) {
         FeatureSectionHeader()
         Text(
             text = "Features",
