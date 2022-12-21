@@ -16,21 +16,20 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.frankboris.mediationui.R
 import com.frankboris.mediationui.model.Feature
-import com.frankboris.mediationui.ui.theme.ButtonBlue
-import com.frankboris.mediationui.ui.theme.DeepBlue
 import com.frankboris.mediationui.ui.theme.TextWhite
 import com.frankboris.mediationui.util.standardQuadFromTo
 
 @Composable
-fun FeatureItem(feature: Feature, size: Float) {
+fun FeatureItem(feature: Feature) {
     BoxWithConstraints(
         modifier = Modifier
-            .size(size.dp)
-            .padding(7.5.dp)
+            .fillMaxSize()
             .aspectRatio(1f)
             .clip(RoundedCornerShape(10.dp))
             .background(feature.darkColor)
@@ -89,11 +88,12 @@ fun FeatureItem(feature: Feature, size: Float) {
         }
         Box(
             modifier = Modifier
-                .size(size.dp)
+                .fillMaxSize()
                 .padding(15.dp)
         ) {
             Text(
                 text = feature.title,
+                color = TextWhite,
                 style = MaterialTheme.typography.h2,
                 lineHeight = 26.sp,
                 modifier = Modifier.align(Alignment.TopStart)
@@ -105,7 +105,7 @@ fun FeatureItem(feature: Feature, size: Float) {
                 modifier = Modifier.align(Alignment.BottomStart)
             )
             Text(
-                text = "Start",
+                text = stringResource(R.string.start),
                 color = TextWhite,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Bold,
@@ -115,7 +115,7 @@ fun FeatureItem(feature: Feature, size: Float) {
                     }
                     .align(Alignment.BottomEnd)
                     .clip(RoundedCornerShape(10.dp))
-                    .background(ButtonBlue)
+                    .background(MaterialTheme.colors.secondary)
                     .padding(vertical = 6.dp, horizontal = 15.dp)
             )
         }

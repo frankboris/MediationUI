@@ -15,7 +15,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.frankboris.mediationui.R
-import com.frankboris.mediationui.ui.theme.ButtonBlue
 import com.frankboris.mediationui.ui.theme.LightRed
 import com.frankboris.mediationui.ui.theme.TextWhite
 
@@ -25,7 +24,7 @@ fun CurrentMeditation(color: Color = LightRed) {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
-            .padding(15.dp)
+            .padding(vertical = 15.dp)
             .clip(RoundedCornerShape(10.dp))
             .background(color)
             .padding(horizontal = 15.dp, vertical = 20.dp)
@@ -34,7 +33,8 @@ fun CurrentMeditation(color: Color = LightRed) {
         Column {
             Text(
                 text = "Daily Thought",
-                style = MaterialTheme.typography.h2
+                style = MaterialTheme.typography.h2,
+                color = Color.White
             )
             Text(
                 text = "Meditation • 3-10 min",
@@ -47,7 +47,7 @@ fun CurrentMeditation(color: Color = LightRed) {
             modifier = Modifier
                 .size(40.dp)
                 .clip(CircleShape)
-                .background(ButtonBlue)
+                .background(MaterialTheme.colors.secondary)
                 .padding(10.dp)
         ) {
             Icon(

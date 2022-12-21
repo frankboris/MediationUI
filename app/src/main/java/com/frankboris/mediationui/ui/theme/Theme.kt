@@ -5,21 +5,32 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
-
-private val DarkColorPalette = darkColors(
-    primary = DeepBlue,
-)
-
-private val LightColorPalette = lightColors(
-    primary = DeepBlue,
-)
+import androidx.compose.ui.graphics.Color
 
 @Composable
-fun MediationUITheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+fun MediationUITheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    secondary: Color = ButtonBlue,
+    content: @Composable () -> Unit
+) {
     val colors = if (darkTheme) {
-        DarkColorPalette
+        darkColors(
+            primary = DeepBlue,
+            secondary = secondary,
+            background = DeepBlue,
+            onPrimary = Color.LightGray,
+            onSecondary = Color.White,
+            onSurface = Color.White,
+        )
     } else {
-        LightColorPalette
+        lightColors(
+            primary = DeepBlue,
+            secondary = secondary,
+            background = Color.White,
+            onPrimary = Color.Gray,
+            onSecondary = Color.Black,
+            onSurface = Color.DarkGray,
+        )
     }
 
     MaterialTheme(

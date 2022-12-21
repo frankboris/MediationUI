@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Mediation UI</string>
+    <string name="app_name" translatable="false">Mediation UI</string>
+    <string name="good_morning">Bonjour, %1$s</string>
+    <string name="wish_day">Nous vous souhaitons une bonne journée !</string>
+    <string name="features">Populaires</string>
+    <string name="home">Accueil</string>
+    <string name="meditate">Méditer</string>
+    <string name="sleep">Dormir</string>
+    <string name="music">Musique</string>
+    <string name="profile">Compte</string>
+    <string name="start">Jouer</string>
+    <string name="settings">Paramètres</string>
+    <string name="general_theme">Thème général</string>
+    <string name="dark">Sombre</string>
+    <string name="light">Clair</string>
+    <string name="display_language">Langue d\'affichage</string>
 </resources>
