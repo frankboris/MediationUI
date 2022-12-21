@@ -14,10 +14,10 @@ This repository is based on my learning of Android Jetpack Compose where I creat
 - MVVM Architecture
 
 ## Components Used
-- [Material Theme](https://reactnavigation.org/)
-- [Bottom Navigation](https://github.com/oblador/react-native-vector-icons)
-- [Scaffold](https://github.com/react-native-community/react-native-maps)
-- [LazyColumn](https://github.com/osdnk/react-native-reanimated-bottom-sheet)
+- [Material Theme]()
+- [Bottom Navigation]()
+- [Scaffold]()
+- [LazyColumn]()
 
 ## Packages Used
-- [System UI Controller](https://reactnavigation.org/)
+- [System UI Controller]()
